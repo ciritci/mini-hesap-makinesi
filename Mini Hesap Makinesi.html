@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+ 
+
+  <input type="number" id="s1" placeholder="Sayý1"><br>
+  <input type="number" id="s2" placeholder="Sayý2"><br>
+
+  <br><br>
+
+  <button onClick="topla()">Topla</button>
+  <button onClick="cikar()">Çýkar</button>
+	<br>
+	<h1>Sonuç: <span id="sonuc">0</h1>
+
+  <script>
+    function topla() {
+
+      let s1 = Number(document.getElementById('s1').value);
+      let s2 = Number(document.getElementById('s2').value);
+
+
+      let toplam = s1 + s2;
+
+
+      document.getElementById('sonuc').textContent = toplam;
+    }
+
+    function cikar() {
+      const s1 = Number(document.getElementById('s1').value);
+      const s2 = Number(document.getElementById('s2').value);
+
+     
+      let fark = s1 - s2;
+
+      
+      document.getElementById('sonuc').textContent = fark;
+    }
+  </script>
+
+</body>
+
+</html>
